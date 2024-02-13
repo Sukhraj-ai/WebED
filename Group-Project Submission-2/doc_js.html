@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="doc_js.css" />
+    <title>JavaScript Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Requirements">Learing Requirements</a>
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li><a class="nav-link" href="#String">String</a></li>
+        <li>
+          <a class="nav-link" href="#if-else">if-else statement</a>
+        </li>
+        <li><a class="nav-link" href="#while">while statement</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations">Function declarations</a>
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-page">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+                JavaScript is a versatile and widely-used programming language that powers dynamic and interactive web applications. 
+                It enables developers to create responsive and user-friendly websites by providing a robust set of concepts and features. 
+                In this documentation, we will delve into fundamental JavaScript concepts, including String, Array, Loops, Objects,
+                Functions, Conditional Operators, if-else statements, Recursion, and the enhancements introduced in ES6 (ECMAScript 2015).
+            </p>
+            <p>
+                JavaScript was created by Brendan Eich in just 10 days while he was working at Netscape Communications Corporation.
+                 It was initially developed under the name "Mocha," which was later changed to "LiveScript" and eventually became "JavaScript" 
+                 to align with the growing popularity of Java at that time. JavaScript was introduced in Netscape Navigator 2.0 in 1995, 
+                 revolutionizing the web by allowing developers to create interactive and dynamic web pages.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Requirements">
+        <header>Learning Requirements</header>
+        <article>
+            <p>
+                This guide assumes you have the following basic background:
+
+            <ul>
+                <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+            </ul>
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="#Hello_world">
+        <header>Hello World</header>
+        <article>
+            <p>
+                The "Hello, World!" program is a classic introductory program used to demonstrate the basic syntax of a programming language. In JavaScript, creating a "Hello, World!" program is quite simple. Here's the syntax:
+            </p>
+            <code>console.log("Hello, World!");
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="Variable">
+        <header>Variable</header>
+        <article>
+            <p>
+                Variables are fundamental components of any programming language, including JavaScript. They are used to store and manage data, making it possible to work with and manipulate values within your code. In this guide, we'll explore the concept of variables in JavaScript, including their declaration, assignment, naming conventions, scope, and data types.
+            </p>
+            <p>In JavaScript, you declare a variable using the var, let, or const keyword, followed by the variable name. Here's how you declare and assign values to variables:</p>
+            <code>
+                // Using var (avoided in modern JavaScript)<br>
+                var age = 25;<br>
+
+                // Using let (for mutable variables)<br>
+                let name = "John";<br>
+
+                // Using const (for constants)<br>
+                const pi = 3.14159;<br>
+            </code>
+        </article>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+        <header>How to declare a Variable in JavaScript</header>
+        <article>
+            <p>In JavaScript, you can declare a variable using the var, let, or const keyword. Each of these keywords has specific characteristics and scoping rules. Here's how you can declare a variable using each of these keywords:</p>
+            <code>var age = 25;<br>
+                var name = "John";<br>
+                </code>
+        </article>
+    </section>
+    <section class="main-section" id="Constants">
+       <header>Constant Variables</header>
+       <article>
+        <p>
+            In JavaScript, you can declare a constant variable using the const keyword. A constant variable, as the name suggests, is a variable whose value cannot be reassigned after its initial assignment. It provides a way to create variables that are intended to remain constant throughout the execution of your program. Here's how you declare and use constant variables in JavaScript:
+        </p>
+        <code>const pi = 3.14159;<br>
+            const appName = "MyApp";<br>
+            </code>
+       </article> 
+    </section>
+    <section class="main-section" id="Data_types">
+        <header>Data Types in JavaScript</header>
+        <artucle>
+            <p>
+                JavaScript is a dynamically typed language, meaning you don't need to explicitly specify the data type of a variable when declaring it. Instead, JavaScript determines the data type based on the value assigned to the variable. JavaScript has several primitive data types and a complex data type. Let's explore each of them:
+            </p>
+            <ul>
+                <li>Number: Represents both integer and floating-point numbers. Example: 42, 3.14159.</li>
+                <li>String: Represents a sequence of characters. Example: "Hello, World!", 'JavaScript'.</li>
+                <li>Boolean: Represents a logical value indicating true or false. Example: true, false.</li>
+                <li>Null: Represents the intentional absence of any value. It's a special value that denotes the absence of an object. Example: null.</li>
+                <li>Undefined: Represents a variable that has been declared but hasn't been assigned a value yet. Example: undefined.</li>
+            </ul>
+        </artucle>
+    </section>
+    <section class="main-section" id="String">
+        <header>String in JavaScript</header>
+        <article>
+            <p>
+                In JavaScript, a string is a sequence of characters enclosed within either single (') or double (") quotes. Strings are used to represent textual data and are one of the most common data types in programming. They are essential for working with words, sentences, and any form of textual information. Let's explore the various aspects of strings in JavaScript:
+            </p>
+            <code>let singleQuoted = 'This is a single-quoted string.';<br>
+                let doubleQuoted = "This is a double-quoted string.";<br>
+                </code>
+        </article>
+    </section>
+    <section class="main-section" id="if-else">
+        <header>If-else Statements</header>
+        <article>
+            <p>
+                In JavaScript, the if-else statement is a fundamental control structure that allows you to make decisions in your code based on specified conditions. With if-else, you can execute different blocks of code depending on whether a given condition is true or false. Here's how the if-else statement works:
+            </p>
+            <code>if (condition) {<br>
+                // Code to execute if the condition is true<br>
+              } else {<br>
+                // Code to execute if the condition is false<br>
+              }<br>
+              </code>
+        </article>
+    </section>
+    <section class="main-section" id="while">
+        <header>While Loop</header>
+        <article>
+            <p>
+                In JavaScript, the while loop is a control structure that allows you to repeatedly execute a block of code as long as a specified condition is true. This loop is particularly useful when you want to repeat an action an unknown number of times until a certain condition is met. Here's the basic syntax of the while loop:
+            </p>
+            <code>while (condition) {<br>
+                // Code to execute while the condition is true<br>
+            }<br>
+              </code>
+        </article>
+    </section>
+    <section class="main-section" id="Function_declarations">
+        <header>How To Declare Function In JavaScript</header>
+        <article>
+            <P>
+                In JavaScript, a function is a block of code that can be defined and invoked to perform a specific task or operation. Function declarations are a way to create reusable pieces of code that can be called by name. They play a crucial role in organizing and structuring your code. Here's how you can declare and use functions in JavaScript:
+            </P>
+            <code>
+                function functionName(parameters) {<br>
+                    // Function body: code to be executed<br>
+                    // ...<br>
+                }<br>
+            </code>
+            <ul>
+                <li>function: This keyword is used to declare a function.</li>
+                <li>functionName: The name of the function, which you can use to call the function later.</li>
+                <li>parameters: A list of parameters (input values) that the function can accept. Parameters are optional, and you can have zero or more of them.</li>
+                <li>Function body: The block of code enclosed in curly braces {} that defines what the function does.</li>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a> and <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">freeCodeCamp</a></p>
+        </article>
+    </section>
+    </main>
+  </body>
+</html>

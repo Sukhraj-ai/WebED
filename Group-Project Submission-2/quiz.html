@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Group Project 1 Submission" />
+    <title>WebED Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">WebED Quiz</h1>
+      <nav>
+        <ul>
+            <li><a accesskey="s" href="#student-info">INFO</a></li>
+            <li><a accesskey="s" href="#html-questions">HTML</a></li>
+            <li><a accesskey="s" href="#css-questions">CSS</a></li>
+            <li><a accesskey="s" href="#js-questions">JS</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <form method="post" action="#">
+        <section role="region" aria-labelledby="student-info">
+          <h2 class="sub-heading" id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 class="sub-heading" id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                A head section is visible to a person viewing the Web page.
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                Whenever you want to make a link you should use the element (e) tag.
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>3</p>
+            <fieldset class="question" name="html-question-three">
+              <legend>
+                Which HTML tag is used to define an internal style sheet?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="q3-a1" name="q3" value="true" />
+                    style
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="q3-a2" name="q3" value="false" />
+                    script
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 class="sub-heading" id="css-questions">CSS</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="css-question-one">
+              <legend>
+                In CSS, “font-size” can be called as?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="cq1" value="true" />
+                    Property
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q2-a2" name="cq1" value="false" />
+                    Property-Name
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="js-questions">
+          <h2 class="sub-heading" id="js-questions">JavaScript</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="JavaScript-question-one">
+              <legend>
+                Which of the following is correct syntax for arrow function?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="jq1" value="true" />
+                    () => {<br>
+                      return "Hello";<br>
+                    }
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q2-a2" name="jq1" value="false" />
+                    function ()<br>
+                    {<br>
+                      return a;<br>
+                    }
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <button class="send" type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="index.html">WebED</a><br/>
+        By Sukhraj, Akashdeep & Amir<br/>
+        Surrey British Colombia, Canada<br/>
+      </address>
+    </footer>
+  </body>
+</html>

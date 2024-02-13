@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Documentation</title>
+        <link rel="stylesheet" href="doc_html.css">
+    </head>
+    <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Requirements">Learing Requirements</a></li>
+        <li><a class="nav-link" href="#Helloworld">Hello World</a></li>
+        <li><a class="nav-link" href="#Basic">HTML Basics</a></li>
+        <li><a class="nav-link" href="#Elements">HTML Elements</a></li>
+        <li><a class="nav-link" href="#Multimedia">HTML Multimedia</a></li>
+        <li><a class="nav-link" href="#tables">HTML Tables</a></li>
+        <li><a class="nav-link" href="#references">Reference</a></li>
+      </ul>
+    </nav>
+        <main id="main-page">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        HTML (Hypertext Markup Language) is the standard language used to create web pages and structure their content. It forms the foundation of the web and provides the structure for displaying text, images, videos, and other media within a browser. In this comprehensive guide, we will cover the essential aspects of HTML, including its syntax, elements, attributes, document structure, and best practices.
+                    </p>
+                    <p>
+                        HTML is composed of elements, which are represented using tags. Tags are enclosed in angle brackets (< >). Most HTML tags have an opening tag and a corresponding closing tag. The content between the opening and closing tags forms the element's content.Self-closing tags, such as the img tag, do not require a closing tag.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Requirements">
+                <header>List of Learning Requirements before you start: - </header>
+                <article>
+                    <ul>
+                        <li>Understand what HTML is and its role in web development.</li>
+                        <li>Learn about HTML syntax, elements, and tags.</li>
+                        <li>Differentiate between opening and closing tags.</li>
+                        <li>Familiarize yourself with the basic structure of an HTML document.</li>
+                        <li>Add comments to your HTML code for explanations and documentation.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Helloworld">
+                <header>Hello World in HTML</header>
+                <article>
+                    <p>
+                        Creating a "Hello, World!" program in HTML is a simple and common way to start learning the basics of web development. In HTML, you can display text using the <p> (paragraph) tag or any other appropriate tag. Here's how you can create a "Hello, World!" message using the <p> tag:
+                    </p>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBEUEhIUFBUSGBgUGBsUGRIYFSYZGBgbGhgaGhoaGxkbLS0kGyEqHxkYJTclLC4xNjQ0GiM6PzwyPi8zNDMBCwsLEA8QGxISGzEhISQzMzMzMzMxMzMzMzExNTM1MzMxMzMzMzMzMzMzMzMzMzMzMzMzMTMzMzEzMzMzMzM+M//AABEIAIoBbQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EADsQAAICAQICBwcDAwMDBQAAAAECAAMRBBITIQUUIjFBUWEGFVJTcZGSIzKBM0KxYqHBFmNyJEOCsvD/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB4RAQACAgMBAQEAAAAAAAAAAAABEgIRAxMxQVEh/9oADAMBAAIRAxEAPwDqWU5yc+f1mCh8Fc+qqcff/wDYkrhySlmK8ep857Mp148e9KpCD4MD5EFfDPcfTH07vDA97Zt2biGOf37ef/gxPf8AUSk1FrDr43sCt1QQb+ahqaMBR/aCxb+cxb2JXGLRtb8OY2yqt6Vu2uRXWo33VI+47t1QfDFcYwdh5enrI9+v1AKKuwOU0zM+8lWFlrrgIRgHsc2Aydx8hFoaovdszw5TJ0laj8NUax3svYDd3LW6KVXJz/eMDyBnvUayx7tKAAiHUvWQH7ZKU2lldRy25wfHmBFii12zPDm1W7ZXY/dneQNh7vHPM/x5zl+kNTZXXr3NjbGNlaNvOanCdjae9VbuGCO0fNomYSMdui2zPDleekbM4VE2l+CGLnfv2bssMft5eecZMi6HpXU8PTLwuJZZUtzlSASDgZGcdo8/SLQtJXXDmNsra+mWG57FrVA1y79xYjgMw3MMcgQB6zOn6UsY7OGiuHZCHbauFRXz5g9ru8O+LQlJWO2Z4cjezZZ9HpXclmapGLMdxJKjmWPeT5yy4cqaRuHHDknhxw4RG4ccOSeHHDgRuHHDknhxw4Ebhxw5J4ccOBG4ccOSeHHDgRuHHDknhxw4Ebhxw5J4ccOBG4ccOSeHHDgRuHHDknhxw4Ebhxw5J4ccOBG4ccOSeHHDgRuHHDknhxw4Ebhxw5J4ccOBG4ccOSeHHDgRuHHDknhxw4EqukscKMmem6Ot8FGP9QJ/wwm7QvtfPkDI3TvTFlbUKjVoLGYM71NbyVCwwiMpznxnLkmd6dsMIye16Ot5DaoAJbaq4ySMZJLGarOglaxbGorZ05LYyKXUAkjDHmO8nv8AEzy3tCVsVCyMquUsbhlNoWhbeWWOc7gc+Gcd4zJ/RnT1WoDGsk7SMjlkbhlTy8x/iYx3HkNThCL7n/7S97N+0fubIZvqQSCfHJmkez1W0oNNVtIClOGgUhWLBcAYwGZiB4Ek98vetehlFovaFy+oa2ysJU9icNaWDBUbapNhYqxPLkF8Zb5FY9Zv9n67FCvp6mUNv2tWpAY97AHxI7zPS9ApvFgorDjGLAihxgFRhsZ5Akd/cTI//VLb7sqQtdgrSs1He56txSpyeyeTENjGBjGTLno3pU21V2bGXeobae8Z/wAxbIpCP1Cz4DNL9D7ldGqUq+S6FQQ+fiB5HulpbrCFYgdwJ/2lF0R7SsaK7LnV2t2KtdVDod7KWKKGZt/IMeWMBTF8ikN46EHE4vBTfjbxNi79vlu7wPTOJqb2aqKqh0tJVDuVDWhVSTzKrjCk+OJJt9qtOqsx4mFre5iEJ2om7fu8iNpGO+P+qaM4ItHaRSTWQF4hC1k+QYkYMXyKQhaL2ZWvf+kjGxnLuUXc62OzlWPewG4jBm1fZ2oIKxpqggIYJsXYGHcwUDG717+U9dI+1VdfEVUd3rasGsDnh7FTPLPnn15S6TW5AOGGQDg94yByPrFspKQrKujGRVRKwqqMKigKqjwAA5ADynvqNnwH/abOluk3rqLoB2CpbIz2Nw3kAEcwuSPpIg9oP1H3Mq1ixq0O0ktsTdYS27AAbI7v7D58rfJKQ39Qs+Ax1Gz4DNOn9rNK4JVj2QSeXgF3eHmM4+hk3SdMV254ZJwqOTjlhxuXn54548Mjzi+R14tHULPgMdQs+Ayx62fIzntR7VFK9UTjiVvYiLw22nacLuI5H7xfIpCw6hZ8BmBobPgMidIe1laJctbKba63YKeal0UMVxnJ7/8AYyXV7R1NYK8Wbt/D3bDs4gQuVDHlnaCYvkUhnqNnwGOo2fAZY9b9DHWvQxfI68Vd1Gz4DHUbPgMsetehjrXoYtkdeKu6jZ8BjqNnwGWPWvQx1r0MWyOvFXdRs+Ax1Gz4DLHrXoY616GLZHXiruo2fAY6jZ8Blj1r0Mda9DFsjrxV3UbPgMdRs+Ayx616GOtehi2R14q7qNnwGOo2fAZY9a9DHWvQxbI68Vd1Gz4DHUbPgMsetehjrXoYtkdeKu6jZ8BjqNnwGWPWvQx1r0MWyOvFXdRs+Ax1Gz4DLHrXoY616GLZHXiruo2fAY6jZ8Blj1r0Mda9DFsjrxV3UbPgMdRs+Ayx616GOtehi2R14q/SkBj9D/kSP0hTY1lT1qh4e49uxkGWG3uVGyMZPeP5m/TVq7qrAFSeYPceRMk20aJWWs11b2xhAm48/Egdw9TiTky1Jx70qvc1Tl3s37rTxLEBygZqVqZVO0HbtX0OefkBK6N0YpUrxbbBywbFTKgDAGURS31bJ9ZB6D6Q0ttFD2ULvsXOEpbYzgZZUJzk4Hdk9x8pI0ev0D6frB07omAe3QcncdoAxndz8pm8R8a1Kz3L6/YznqOibt1q2OwptZ3atbAdjOS25P0VbO7zcgZ7jLCizSalXXTLUtgXcDbpmZcbyjdnKFsMjKcMMEc46MbTNpqLb66VawdphXtQN/Jbb6ZP8yWgiJR6+gKgdz2aixjYLS77cluC1OMKigLsYnAA54+ksNBp1qrSvfY4QYDuBuwO4HYqjkOXd9cywXozSkAiqog8wQowf5nodE6b5Vf4iLx+GpRH2kEc+Yx3HxlNr+i2NWnrpJBoIZLTZsdCqFMj9N0fKM6kMuMHzwZ0nunTfKr/ABEe6dN8qv8AEReDUuaq6ERqrEsLK1lVlDlH3ZWwsS+5kXtksT+3A7sYkvUdFUvxMmwbzUTjv/RcOmCR5gZl17p03ya/xEe6dN8mv8RF4X+uZ/6cp/U/V1Hbzt5J+nmzi9jsc8OB+/dy5d0u68AAEsxAA3Ecz6nAAyfpJfunTfKr/ER7p03yq/xEsZwkxKt1wLVsqKjlhtKuWVSDyPNVY92fCVeh6GUVV1WjC17tu2xnL7wwsNjFFOcuTy8T6TpvdOm+VX+Ij3TpvlV/iJLQalzydB17ER7dQ4rZXTcEUrtGNuURdykd+7JPnJnR2gqoV1Tfh3Nh3c+ZCgAYA5BVUAeSiWvunTfKr/ER7p03ya/xEto/DUou5fX7GUVmhvNd9eynZczsSb33DeeeBwsDw5c/5nT+6dN8qv8AER7p03yq/wARJaF1LnG6CQi0cS5VuVg9S7WQM64ZlZk4gPeeTY9BPOi6Hxc9lllpVbmtSnlsyU2K52ruzgty3Yyc4zidL7p03yq/xEe6dN8qv8RFoTU6Rty+v2Mbl9fsZJ906b5Vf4iPdOm+VX+IlvH4VlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlF3L6/YxuX1+xkr3TpvlV/iI906b5Vf4iLwVlXaH+on1P8AgyVX0Stb76WNe45dANyP/wDE81PqpHrmRtCP1K/qf8GeBfqTqAt+a68jh8Ib0c55B7uTKTy7OxBnlueOX04/GOh+i04Gg4dqumnG5bAvKwFWXlz7PfnPPujSdBWpR1drq2rVlNeKSrqFs3gOxch+WBkKvnKboKvUVaTQMjWlnrdTWx7IxW7IuzGF7QXnjPmTmZ6F6R1IrsstIfbp9z0JqHe82DGSEZE4P9wKqSO7Hdz5fXSV70V0GaLC/E3ZV0xsx+++y7Ocnu37ceOM8s4GNH0f+iumS/lT+naUUBySquFO7dsyrgnxwRgic7pOk9Rs1SsxVQ9DKyWveVqfs2strorHBU5wOySecwdRdWmqbTl2R9cgayy10zV1WkbhaEZwm8Ku8A8s8/GVPjt9Foq6kCVqFXyznPqSeZMlziNKdVZZoq2ubYyasu1FpcHa9PBVriqksoZueATg9/OW3SFl6PWuna17AFDVsgesrz7Vjkrw2PmGJPfsfGIHQzzmc9r9TrA6CxeFUR27aP12Bwcg7gpRc4G4I+QT+zGZG0Vdaa+7fbcN4rapWuco+VIOAThufhEDpOsJxDXuXcF3lM9raTjOPLIInuxwoJJAAGSfIDxlNpqWGsvXdYUelG5uTtZnsB2E815Y5DuwJE9kUVBbW1lpsW23NdlrMQnFYqdrHllSpz6wL7Q66q4Fq3RwDtJU5we/B9eYkucje+oSjpV6FPEFpKef9OsEjkc4G4jkeY7j3TV0dq7TVYWu/uU1LRa+qcNtOVbeilgeXZI5c+a+AdkTNDahA61lgGYFlTxIXAJA9Mj7zmOm6tRZ0fe+oqVblQ7CjHd4cyikitv9Ku//AJGbNR0WvXNKqcStOBcW4Z27iWp5F/3L3eBGYIdHfqETbvZV3MEGTjLHuA9ZInH0G1qOj7Ha4vxER8scMoZhl07icY7WMzZr9XYmsXD8UM6J1dLGrsqBABOwZS9SWLksV2gY7XIAOskYalDY1YZS6qHZM9oKxIViPAEqwz6HykgzndGHTW61d1uwUUurOSwVmfUb9pbv5KnZ7hgecDooM5f2Z1TmyytmNu1EbrS2s6OSWBBrYYpfIzsUty8Ryk/2roazRapUNgbhOV2MVYtsOBleff4QLZnABJOABknyA7540962IroysrgMrKcggjIIPjKXTpXZpGFdtrYXdvFrFwwXu3Zzj/TKzpFGbSdGWWPcm1qTayWMmFashmfZj+4r9Mwm/wCbdNrOkaaigssRN5CruOMlmCgA+pIH8ydOc9ocNo02FnU2afDZLEgaivmWOSfr/MrvajV6xdQUratE4Qaux9Q9Sizc2SwRHFmMJ2GIyCfqCu0mmy5VxuIGSFGfEnuAlFq9VqeKA+a6D/7tI3ljy/exw1QPPuRhjB3r3ScP1bm+GnKg/wDcYdrB/wBKkc/Nj5QLMGaKNSjtYqurGttjgHJVtobDeRwwP0InOeytaqdUj2XcQajUfpvazEVmwlGCseWUKkH1mdJp7Gr6UqLXELcy1tvbfjq1LAB/3MNzNzz5jwk3/B0ep1CVqXdgqjvJ7pnS6mu1FetlZWGVZTkEeYMp/Zd0OmQI9jsETeHsZ2Vtoyvb/b3d0prbtRX0dpeEMZsC2ku1e2sl8kuquydoICQpwCe7vlI/ruInIabV6ng1lbC925wiVE6mt038hYziv9o5byU5+J7jN1+p14WvNaIp/qWUnrFi/wDijhPDnuAcju2H9wC8utVFZmIVVBYse4AcySZ5o1CPu2srbTtbHgcA4Prgj7ysci1qalYuihbbGbmWAP6anuOWYbj38qyCOco7qrUOuuSy9WXV1bUU4TaWpV8qo7QKls5zj0xA7eYJnFdH63WHWlbGqTF9imttQ+56sNwwtBTZk9ht4f4vpImm6a1RstNSON9F7V1Pc9j8ZOdaOjKFpY8+wrN/tA7vjJu2bhuxv2557c4zjyzym6fPxqLAtr6Wy+510S4d8ntbxuwSpw+MkqByOOz4TdTqNS9eBcAGvoA4Woa91Uk8QM7ohUMAOWDjn3eAd1Eodaj01oqW6k2bmKDHGZ8nO1wcAqMgZLLgD93jLDo6y9kBvREfxVGLD68wNp9AWA7tzd8CdERAREQKHSD9RPqf8GTH6Sr3ipSzuSMqg3bB5u37UH1IJ8MmRtMP1K/qf8GSPd1auHQms55hDhX8wyftJOO/GZvl9Y4/FN0D7T76KG1C2IXqazjsqiqwoCX2hSWGBzGVGQOWZMHtJWAxtqvp21m5Q4QmxAQCUFbtzyyDa2D2hy78a9L7NVV1pWz3WV1VvWlbgHCuMN+wBmbGQPrykPT6bTX13M1mqs4CHTENQ6W1ZCOdtewOzEcNs7TnA9Zj6236f2ifrFi21XVIF04CuE3I1r3jc7IzKVPDQDBODyOOcsG6aQPauy7bSyo9wTdWGZdxHIluQK5O3A3DJ78U6adbKdRbV1nUtqFXTEOq0lDS1gBZXFbJtZznAJ7OQD422i6G2aeulrLDt52OG2ta7c3ZmHPm2TgYgla0XI6hkZWU9zA5B/mbpG02mStdqKqjvwBj6n1PrJAMDMxErl6VqN/V/wBQWFWYBqXVWC7d22xlCNjcvcx74FjEi36tEatXODaxrQYJ3MEZyMjkOyjHJx3SVAzExMwMRMxAxEzEDETMQMRMxAxEzEDEzEQMTTRUqDaoAGWbA82Ysx/kkn+ZviBiJmIGImYgIiIGlalDMwABYgsfPAwP9ptmYgJgzMQMRMxAxMxEBERAREQKakfqV/U/4MoOjOjdQCpPEC+8dTZwjWAAjXXFX3Y3bSCCD3HInQoP1K/qf/qZirphLH2UBrcHa1if0kwcEGw8mYYIKruI8cd83n6xh5Kg9mhqRevHa1bQbRYp09ux8uSpF5JpIxtI24OOXIgiXPQlLLqOkWZWVX1KMrEEBwNLp1ypP7huVhkeII8J66W1T4v4bFeBS7swxzcoSi8+/A7RHqvnIWk9omWtOPWys1C2qd6s1nNVIIXkrbnXkCR2uR5TEN+tCU3LpbRttAOstd1RTxGqOoZmKKO0cqc9kZI7vCT/AGb4n/qTi5aWsBoW1WVwvDUP2bMOq8QNgMAfEciJ5s9oCjWV2VEXKK2WtX3Kwudq0O/A29tHBGOQXPOaOjemrRfcl6lQdTwFw4Zaz1al1GQASrsz4JxgsB4iIJ+s+0K6vrNXV+IFsqdXdeao1b12LkdwLrxEz6j0laDbhX1KazbbSXrRK3Zq7nd2dXFeShANYBfCgA8xzl6vTeQz8G01K7JxEG49ltu81gb9pOeahjyzgDnLTS6qu1Q9bo6nudGDL9x/iIHPdF9HW2WudVxtyrpyCHZU3qgNm3adpywAbvB7vGWOtpc67SMFYqtd4ZwOypY1YBPgTg4+hlxtjbA4fTUO2q02+vVG1NVa1jsr8FUNV6oVc9hlIKAbc4Jw2CZ3ImAJ6gIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBUIw4lf1P+DN92grNnFC7bBgb1O0sB3K+P3L6HOPCV2h/qJ/P+DPR0dvGD2HjICNoD7RX5Ma/2v55JJHeBN8kamGOPx7u4dVL12lnNiWPYyDm3ZJsbv5D+0eXZE16bonTGreS7I9K1g2P+yodoAH+3HIknJ7IyeUGtr6NVag3G6tkpHmm1ghBPLtk7s+RXPdKp/ZhNtarp6wH0tiWllU7rNtfD4hOTYQQ2Cc4x3zn+t6W69B6dw7FrHa3YRqCwLgV9qvYw5AAliOXezZzmVvtH0bwtNeldd1o1L77rOIvErwiKbVDlckLWuApGCBgTUnQqNpKaV0a17Xra2vZWofauC5CEh+YHM8576D6Htqp1SGvabKa8AEHdYKtrE8+bbgASe/A58pSF1V0fp7aqOyWrVF2VsezjAILL3MeQ78iWgxgeHgJz9uhtNemVEK2JWq8fibNmMZUhc8TuztIK8sy80lbhFDtubHNtu3P8QkJEREKREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA57Qf1E+v/AAZ0GJz+g/qJ9f8AgzoJ05fWOPwIjEzE5tvO0RtnqIGMTMRAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQOe0H9RPr/AMGdBOf0H9RPr/wZ0E6cnrnx+MxETm6EREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/Z">
+                </article>
+            </section>
+            <section class="main-section" id="Basic">
+                <header>Basics of HTML</header>
+                <article>
+                    <p>
+                        HTML stands for Hypertext Markup Language. It's a standard markup language used to create and structure content on the web. HTML provides the foundation for web pages by defining the structure of the content, such as headings, paragraphs, lists, links, images, forms, and more.
+                    </p>
+                    <p>
+                        HTML content is structured using elements, which are represented by tags. Tags are enclosed in angle brackets (< >). Most HTML tags have an opening tag and a corresponding closing tag.
+                    </p>
+                    <p>
+                        HTML elements can have attributes that provide additional information or settings. Attributes are specified within the opening tag.
+                    </p>
+                    <img src="data:image/png;base64,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">
+                </article>
+            </section>
+            <section class="main-section" id="Elements">
+                <header>Elements in HTML</header>
+                <article>
+                    <p>
+                        HTML elements are the building blocks of web pages. They define the structure and content of a web page, allowing you to display text, images, links, forms, and other types of content. Each HTML element is represented by a tag, which is enclosed in angle brackets (< >). Elements can have attributes that provide additional information about them. Let's explore some of the common HTML elements and their usage:
+                    </p>
+                    <p>
+                        These are just a few examples of HTML elements. HTML provides a wide variety of elements that you can use to structure and format content on your web pages. As you continue to learn, you'll discover more elements and their uses to create rich and engaging web experiences.
+                    </p>
+                    <ul>
+                        <li>Headings (&lt;h1&gt; to &lt;h6&gt;):</li>
+                        <li>Paragraphs (&lt;p&gt;):</li>
+                        <li>Links (&lt;a&gt;):</li>
+                        <li>Links (&lt;a&gt;):</li>
+                        <li>Lists (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;):</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Multimedia">
+                <header>Multimedia</header>
+                <article>
+                    <p>
+                        Multimedia elements in HTML allow you to enhance your web pages by incorporating various types of media, such as images, audio, and video. These elements make your content more engaging and interactive. Let's explore how to include multimedia in your HTML documents:
+                    </p>
+                    <p>
+                        The <img> element is used to display images on your web page. You can specify the image source (URL) using the src attribute, and provide alternative text for accessibility using the alt attribute.
+                    </p>
+                    <code>&lt;img src="image.jpg" alt="An example image"&gt;
+                    </code>
+                    <p>
+                        The &lt;audio&gt; element allows you to embed audio content, such as music or sound effects. You can use the controls attribute to provide playback controls.
+
+                            Example:
+                    </p>
+                    <code>&LT;audio controls&gt;<br>
+                        &LT;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                        Your browser does not support the audio element.<br>
+                      &lt;/audio&gt;
+                      </code>
+                      <p>
+                        The &lt;video&gt; element is used to embed video content. Similar to the &lt;audio&gt; element, you can use the controls attribute to enable video playback controls.
+
+                            Example:
+                      </p>
+                      <code>&lt;video controls&gt;<br>
+                        &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                        Your browser does not support the video element.<br>
+                      &lt;/video&gt;
+                      </code>
+                </article>
+            </section>
+            <section class="main-section" id="tables">
+                <header>Tables In HTML</header>
+                <article>
+                    <p>
+                        Tables in HTML are used to present data in a structured format, typically in rows and columns. Tables are useful for organizing and displaying information, such as financial data, schedules, product listings, and more. To create tables in HTML, you use a combination of elements like &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;. Let's explore how to create tables:
+                    </p>
+                    <p>
+                        Basic Table Structure (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;):
+                            The &lt;table&gt; element is used to create a table. Inside the table, you define rows with the &lt;tr&gt; element. Within each row, you use &lt;th&gt; elements for table headers (typically in the first row) and &lt;td&gt; elements for table data cells.
+                            
+                            Example:
+                    </p>
+                    <code>
+                        &lt;table&gt;<br>
+                        &lt;tr&gt;<br>
+                        &lt;th&gt;Header 1&lt;/th&gt;<br>
+                        &lt;th&gt;Header 2&lt;/th&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;tr&gt;<br>
+                        &lt;td&gt;Data 1&lt;/td&gt;<br>
+                        &lt;td&gt;Data 2&lt;/td&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                          
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id="references">
+                <header>
+                    Reference
+                </header>
+                <article>
+                    <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a> and <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">freeCodeCamp</a></p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

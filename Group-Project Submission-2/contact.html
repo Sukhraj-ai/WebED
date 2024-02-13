@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="contact.css">
+        <meta name="viewport" width="device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <div class="container">
+        <h1>Our Location on Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83538.78077121712!2d-123.0232881027344!3d49.132480300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867530de5ca27d%3A0xebaec6a6765036bb!2sKwantlen%20Polytechnic%20University!5e0!3m2!1sen!2sca!4v1691346584459!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div> 
+       <section class="contact-us">
+            <h1 class="ti">Contact Us</h1>
+            <form method="post" action="#">
+                <fieldset>
+                  <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"  required /></label>
+                  <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                  <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="example@gmail.com" required /></label>
+                  <label for="mobile-number">Enter your Contact Number: <input id="mobile-number" type="text" name="mobile-number" type="mobile-number" placeholder="+1" required></label>
+                  <div class="question-block">
+                    <label for="customer-questions">Do you have any questions:</label>
+                  </div>
+                  <div class="answer">
+                    <textarea id="customer-questions" name="customer-questions" rows="5" cols="90" placeholder="Who is founder..."></textarea>
+                  </div>
+                  </fieldset>
+                  <button type="submit" class="send">Submit</button>
+                  </form>
+       </section> 
+       <footer>
+        <address>
+          <a href="index.html">WebED</a><br/>
+          By Sukhraj, Akashdeep & Amir<br/>
+          Surrey British Colombia, Canada<br/>
+        </address>
+      </footer>
+    </body>
+</html>

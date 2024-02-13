@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Documentation
+        </title>
+        <link rel="stylesheet" href="dcss.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>CSS Documentation</header>
+            <ul>
+              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+              <li><a class="nav-link" href="#Requirements">Learing Requirements</a></li>
+              <li><a class="nav-link" href="#Helloworld">Hello World</a></li>
+              <li><a class="nav-link" href="#Basic">CSS Basics</a></li>
+              <li><a class="nav-link" href="#properties">CSS Properties</a></li>
+              <li><a class="nav-link" href="#Styling">CSS Styling</a></li>
+              <li><a class="nav-link" href="#pseudo-classes">CSS Pseudo-Classes</a></li>
+              <li><a class="nav-link" href="#modules">Modules</a></li>
+              <li><a class="nav-link" href="#references">Reference</a></li>
+            </ul>
+          </nav>
+          <main id="main-page">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        CSS (Cascading Style Sheets) is a stylesheet language used to describe the visual presentation of web pages written in HTML and XHTML. CSS allows you to control the layout, colors, fonts, spacing, and other design aspects of your web pages. It plays a crucial role in separating the content (HTML) from the presentation (CSS), which enhances the maintainability and flexibility of your websites. In this introduction, we'll cover the basic concepts and usage of CSS.
+                    </p>
+                    <p>
+                        CSS works by selecting HTML elements and applying styles to them. Each style is defined using a set of properties and values. When a web browser renders an HTML page, it interprets the CSS rules and applies the specified styles to the corresponding elements.
+                    </p>
+                    <p>
+                        CSS works by selecting HTML elements and applying styles to them. Each style is defined using a set of properties and values. When a web browser renders an HTML page, it interprets the CSS rules and applies the specified styles to the corresponding elements.
+                    </p>
+                    <code>
+                        selector {<br>
+                            property: value;<br>
+                            /* more properties and values */<br>
+                        }<br>
+                          
+                    </code>
+                    <p>There are several ways to include CSS styles in your HTML documents:</p>
+                    <ul>
+                        <li>
+                            Inline Styles: Apply styles directly to individual HTML elements using the style attribute.
+                            <code>&lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;
+                            </code>
+                        </li>
+                        <li>
+                            Internal Stylesheet: Embed CSS within the &lt;style&gt; tags in the &lt;head&gt; section of your HTML document.
+                            <code>
+                                &lt;head&gt;
+                                    &lt;style&gt;
+                                      h1 {
+                                        color: green;
+                                      }
+                                    &lt;/style&gt;
+                                  &lt;/head&gt;
+                                  
+                            </code>
+
+                        </li>
+                        <li>
+                            <p>External Stylesheet: Create a separate .css file and link it to your HTML using the &lt;link&gt; element.<br>
+                            HTML</p>
+                            <code>&lt;head&gt;
+                                &lt;link rel="stylesheet" href="styles.css"&gt;
+                              &lt;/head&gt;
+                              </code>
+                              <p>CSS</p>
+                              <code>
+                                h2 {
+                                    font-size: 20px;<br>
+                                }
+                                  
+                              </code>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Requirements">
+                <header>Things you know before start CSS ?</header>
+                <article>
+                    <p>
+                        Before diving into learning CSS (Cascading Style Sheets), it's beneficial to have a basic understanding of some foundational concepts and technologies. Here are some prerequisites that will help you make the most of your CSS learning journey:
+                    </p>
+                    <ul>
+                        <li>
+                            HTML Basics: Since CSS is used to style HTML elements, having a good grasp of HTML is essential. Familiarize yourself with HTML tags, attributes, document structure, and how to create basic web pages.
+                        </li>
+                        <li>Text Editors or IDEs: Choose a text editor or integrated development environment (IDE) for writing and managing your CSS code. Popular options include Visual Studio Code, Sublime Text, Atom, or Brackets.</li>
+                        <li>Web Browsers: Use modern web browsers like Google Chrome, Mozilla Firefox, or Microsoft Edge to view and test your web pages with CSS styles applied.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Helloworld">
+                <header>Hello World !</header>
+                <article>
+                    <p>
+                        Unlike programming languages, CSS (Cascading Style Sheets) is used to style and format the visual presentation of HTML elements. Therefore, CSS doesn't have a traditional "Hello, World!" program. However, you can create a simple example that demonstrates how CSS is applied to HTML elements to change their appearance. Here's a basic example:
+                    </p>
+                    <p>
+                        Remember that this example illustrates the basic concept of using CSS to style HTML elements. As you learn more about CSS, you'll explore various properties, selectors, and techniques to create more sophisticated and visually appealing designs for your web pages.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Basic">
+                <header>Basics Of CSS</header>
+                <article>
+                    <p>
+                        CSS (Cascading Style Sheets) is a language used to control the visual presentation of web content written in HTML and XHTML. It allows you to apply styles such as colors, fonts, spacing, and layout to your web pages. Let's dive into the basics of CSS:
+                    </p>
+                    <h4>CSS Syntax</h4>
+                    <p>
+                        CSS (Cascading Style Sheets) is a language used to control the visual presentation of web content written in HTML and XHTML. It allows you to apply styles such as colors, fonts, spacing, and layout to your web pages. Let's dive into the basics of CSS:
+                    </p>
+                    <code>
+                        selector {<br>
+                            property1: value1;<br>
+                            property2: value2;<br>
+                            /* more properties and values */<br>
+                          }
+                          
+                    </code>
+                    <p>Example</p>
+                    <code>
+                        h1 {<br>
+                            color: blue;<br>
+                            font-size: 24px;<br>
+                          }
+                          
+                    </code>
+                    <h4>CSS Selector</h4>
+                    <p>Selectors target specific HTML elements to apply styles. Here are some common types of selectors:</p>
+                    <ul>
+                        <li>Element Selector: Targets HTML elements by their tag name.
+
+                            Example:
+                        <code>
+                            p {<br>
+                                color: green;<br>
+                              }
+                              
+                        </code></li>
+                        <li>
+                            Class Selector: Targets elements with a specific class attribute.
+
+Example:
+                            <code>
+                                .highlight {<br>
+                                    background-color: yellow;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>ID Selector: Targets a single element with a specific ID attribute.
+
+                            Example:
+                        <code>
+                            #header {<br>
+                                font-size: 18px;<br>
+                              }
+                              
+                        </code></li>
+                        <li>
+                            Descendant Selector: Targets elements that are descendants of a specific element.
+
+Example:                    
+                            <code>
+                                div p {<br>
+                                    font-style: italic;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>
+                            Pseudo-Class Selector: Targets elements in a specific state, like :hover for when the user hovers over an element.
+
+Example:
+                            <code>
+                                a:hover {<br>
+                                    text-decoration: underline;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                    </ul>
+
+                </article>
+            </section>
+            <section class="main-section" id="properties">
+                <header>CSS Properties and Values:</header>
+                <article>
+                    <p>
+                        CSS properties define specific styling aspects, and values determine how those properties should be applied. Here are some common properties and values:
+                    </p>
+                    <ul>
+                        <li>Color: Set text or background color.
+
+                            Example:
+                            <code>
+                                h2 {<br>
+                                    color: #ff9900;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>
+                            Font: Control font family, size, style, and weight.
+
+Example:
+                            <code>
+                                p {<br>
+                                    font-family: "Arial", sans-serif;<br>
+                                    font-size: 16px;<br>
+                                    font-weight: bold;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>
+                            Margin and Padding: Manage spacing around elements.
+
+Example:
+                            <code>
+                                .box {<br>
+                                    margin: 10px;<br>
+                                    padding: 5px;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>
+                            Border: Define border style, width, and color.
+
+Example:
+                            <code>
+                                .border-box {<br>
+                                    border: 1px solid #ccc;<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                        <li>
+                            Background: Set background color or image.
+
+Example:                    
+                            <code>
+                                body {<br>
+                                    background-color: #f0f0f0;<br>
+                                    background-image: url("background.jpg");<br>
+                                  }
+                                  
+                            </code>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Styling">
+                <header>CSS Styling</header>
+                <article>
+                    <h4>CSS Box Model:</h4>
+                    <p>
+                        The CSS box model describes how elements are structured, including content, padding, border, and margin. Understanding this model is essential for controlling element dimensions and spacing.
+                    </p>
+                    <h4>CSS Inheritance and Specificity:</h4>
+                    <p>
+                        Styles can be inherited from parent elements. Specificity determines which styles take precedence when there are conflicting rules. The more specific a rule is, the higher its priority.
+                    </p>
+                    <h4>Responsive Design and Media Queries:</h4>
+                    <p>
+                        CSS media queries allow you to apply different styles based on screen size, making your web pages responsive and adaptable to various devices.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="pseudo-classes">
+                <header>
+                    CSS Pseudo-Classes
+                </header>
+                <article>
+                    <p>
+                        CSS pseudo-classes and pseudo-elements are used to style specific states or parts of HTML elements that cannot be targeted using regular selectors. They allow you to apply styles based on user interactions, element positions, or content states. Here's an overview of CSS pseudo-classes and pseudo-elements:
+                    </p>
+                    <p>
+                        Pseudo-classes are used to define styles for specific states of elements. They are preceded by a colon (:) and follow the regular selector.
+                    </p>
+                    <code>
+                        selector:pseudo-class {<br>
+                            property: value;<br>
+                          }
+                          
+                    </code>
+                    <h4>Example</h4>
+                    <p>
+                        :hover: Styles an element when the mouse pointer is over it.
+                    </p>
+                    <code>
+                        button:hover {<br>
+                            background-color: #ff6600;<br>
+                          }
+                          
+                    </code>
+                    <p>
+                        :active: Styles an element when it's being clicked or activated.
+                    </p>
+                    <code>
+                        a:active {<br>
+                            color: red;<br>
+                          }
+                          
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id="modules">
+                <header>CSS Modules</header>
+                <article>
+                    <p>
+                        CSS Modules is an approach to writing modular and scoped CSS in web development. It's particularly useful in larger projects where CSS rules might otherwise become difficult to manage and conflicts between styles could arise. CSS Modules help solve these problems by encapsulating styles within individual components or modules. Let's explore how CSS Modules work and how to use them: 
+                    </p>
+                    <h4>How CSS Modules Work:</h4>
+                    <ul>
+                        <li>
+                            Local Scoping: In CSS Modules, each CSS file is treated as a separate module. The class names inside a module are scoped locally to that module, preventing them from conflicting with class names in other modules.
+                        </li>
+                        <li>
+                            Name Transformation: When you import a CSS module into your JavaScript or HTML code, the class names are transformed into unique identifiers, ensuring their uniqueness across the entire application.
+                        </li>
+                        <li>
+                            Accessing Styles: You can import and use the CSS class names in your JavaScript code just like importing any other module. This allows you to apply styles to specific elements in your components.
+                        </li>
+                    </ul>
+                    <h4>Creating a CSS Module:</h4>
+                    <p>Create a CSS file, for example, styles.module.css:</p>
+                    <code>
+                        /* styles.module.css */<br>
+                        .button {<br>
+                            background-color: blue;<br>
+                            color: white;<br>
+                            padding: 10px 20px;<br>
+                            border: none;<br>
+                        }
+
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id="references">
+                <header>Reference</header>
+                <article>
+                    <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">MDN</a> and <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page">freeCodeCamp</a></p>
+                </article>
+            </section>
+          </main>
+    </body>
+</html>

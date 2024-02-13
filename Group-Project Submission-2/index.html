@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Home page </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+    <nav class>
+      <h1>WebED</h1>
+      <div class="menu-items" id="menuItems">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Course">Courses</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="quiz.html" target="_blank">Take a quiz</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-area">
+      <h1>Welcome to the World of Web Development!</h1>
+      <p>Learn the craft of web content structuring with HTML, the craft of design and layout with CSS, and the dynamic possibilities of web development with Javascript.<br> All skill levels, from complete novices to seasoned programmers, can benefit from our expert-led courses, which will provide you the knowledge and skills you need to create amazing web experiences.</p>
+      <button class="why-btn" onClick="openPopup()">Why Choose Us?</button>
+      <div class="popup" id="popup">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/451/469/original/green-check-mark-icon-tick-symbol-in-green-color-illustration-free-vector.jpg">
+        <h2>Thanks to Choose Us</h2>
+        <ul>
+          <li><h4>Engaging and Interactive Learning:</h4> Say goodbye to dry theory and embrace hands-on, practical learning experiences that foster creativity and real-world application.</li>
+            <li><h4>Expert Instructors:</h4> Learn from industry professionals who are passionate about sharing their knowledge and expertise to help you succeed.</li>
+            <li><h4>Comprehensive Curriculum:</h4> Our carefully curated curriculum covers everything you need to know, from the basics to advanced techniques, ensuring a holistic learning journey.</li>
+            <li><h4>Flexibility and Convenience:</h4> Learn at your own pace, on your own schedule, and from the comfort of your home or office.</li>
+            <li><h4>Real Projects and Portfolio Building:</h4> Put your skills to the test by working on real-world projects, building an impressive portfolio to showcase your abilities to potential employers.</li>
+        </ul>
+        <button class="popup-button" type="button" onClick="closePopup()">OK</button>
+      </div>
+      <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+          popup.classList.add("open-popup");
+        }
+        function closePopup(){
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    </div>
+    </section>
+
+    <section class="course" id="Course">
+      <h1>Course we offer</h1>
+      <p>Don't miss out on the opportunity to shape the digital world with your creativity and coding prowess. Enroll now and take the first step towards becoming a proficient web developer with our HTML, CSS, and Javascript courses. Let's build the future of the web together!</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>HTML</h3>
+          <p>HTML (HyperText Markup Language) is the standard language used to create and structure websites and web pages. It uses tags to define the layout, content, and elements of a webpage, enabling browsers to interpret and display the information to users.</p>
+        </div>
+        <div class="course-col">
+          <h3>CSS</h3>
+          <p>CSS (Cascading Style Sheets) is a styling language used to control the presentation and layout of HTML documents. It allows developers to apply various styles, such as colors, fonts, and spacing, to enhance the visual appearance of web pages and create a consistent and engaging user experience. By separating the content from its presentation, CSS simplifies website maintenance and design flexibility.</p>
+        </div>
+        <div class="course-col">
+          <h3>JavaScript</h3>
+          <p>JavaScript is a versatile and dynamic programming language used for creating interactive and responsive web content. As a client-side scripting language, it runs directly in users' browsers, enabling developers to add functionality, handle events, and manipulate web page elements in real-time. Its flexibility and widespread adoption make it an essential tool for modern web development.</p>
+        </div>
+      </div>
+
+    </section>
+    <section class="info">
+      <h1>Our Course Catalog</h1>
+
+      <div class="row">
+        <div class="info-col">
+          <img src="https://www.ozzytyres.com.au/wordpress/wp-content/uploads/2014/03/2.jpg">
+          <div class="layer">
+            <a href="doc_HTML.html" target="_blank"><h3>HTML</h3></a>
+          </div>
+        </div>
+        <div class="info-col">
+          <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/2023/revuelto/revuelto_m.png">
+          <div class="layer">
+            <a href="dcss.html" target="_blank"><h3>CSS</h3></a>
+          </div>
+        </div>
+        <div class="info-col">
+          <img src="https://www.motortrend.com/uploads/sites/5/2013/06/2014-Mclaren-P1-engine.jpg">
+          <div class="layer">
+            <a href="doc_js.html" target="_blank"><h3>JavaScript</h3></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact" id="Contact">
+      <h1>Enroll in our free Courses</h1>
+      <a href="contact.html" target="_blank" class="why-btn">Contact Us </a>
+    </section>
+
+    <section class="footer" id="about">
+      <h4>About Us</h4>
+      <p>"Empowering Minds, Enriching Knowledge: Welcome to our Web Teaching Platform. Unlock a world of learning possibilities with our innovative online courses. Join a community of curious minds, led by expert instructors, and embark on a journey of intellectual growth. Explore, engage, and excel as you navigate through our dynamic lessons, interactive exercises, and collaborative projects. Whether you're a student, professional, or lifelong learner, discover the joy of mastering new skills at your own pace. Ignite your passion for learning with us today."</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </section>
+
+    <script>
+      var menuItems = document.getElementById("menuItems")
+      function showMenu() {
+        menuItems.style.right = "0";
+      }
+      function hideMenu() {
+        menuItems.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
